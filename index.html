@@ -1,0 +1,282 @@
+<!-- index.html (stable / sans crash) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>Karma's portfolio</title>
+</head>
+
+
+
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="#home" aria-label="Home">
+        <img src="assets/icon.ico" class="logo" alt="Logo">
+      </a>
+
+      <div class="nav-separator" aria-hidden="true"></div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li class="sep-li" aria-hidden="true"></li>
+        <li><a href="https://dsc.gg/Liyu" target="_blank" rel="noreferrer">Discord</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- HOME -->
+  <section class="home" id="home">
+    <div class="home-inner">
+      <div class="kicker">Portfolio</div>
+
+      <h1 class="hero-title">
+        <span class="title-line">Developer</span><br>
+        <span class="title-line accent">Graphic designer</span>
+      </h1>
+
+      <h2 class="sub-title">Who am I?</h2>
+
+      <p class="content">
+        I am Karma, an html css and nodejs developer.<br>
+        I'm also graphic designer.<br>
+        I'm actually learning: html, css, nodejs, tsx, c++, c#
+      </p>
+
+      <div class="cta-row">
+        <a class="btn primary" href="#work">See my work</a>
+        <a class="btn ghost" href="https://dsc.gg/Liyu" target="_blank" rel="noreferrer">Join Discord</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num">HTML/CSS</div>
+          <div class="stat-label">Front basics</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">Node.js</div>
+          <div class="stat-label">Bots / tools</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">Design</div>
+          <div class="stat-label">Branding / visuals</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DISCORD CARD (dans HOME, pas fixe) -->
+    <div class="discord-card" aria-label="Discord status card">
+      <div class="pp-discord">
+        <img id="discord-avatar" src="https://cdn.discordapp.com/embed/avatars/0.png" alt="PP Discord">
+      </div>
+
+      <div class="discord-info">
+        <div class="discord-row">
+          <h3>Status</h3>
+          <p id="discord-status">Chargement...</p>
+        </div>
+
+        <div class="discord-row">
+          <h3>Activité</h3>
+          <p id="discord-activity">Chargement...</p>
+        </div>
+
+        <div class="discord-row">
+          <h3>Heure locale</h3>
+          <p id="time">--:--:--</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="wrap">
+      <h2 class="section-title">Work</h2>
+
+      <div class="work-grid">
+        <article class="work-card">
+          <div class="work-top">
+            <div class="work-title">
+              <img class="work-logo" src="assets/PhantoBot.png" alt="">
+              <div>
+                <div class="work-name">PhantoBot</div>
+                <div class="work-badges">
+                  <span class="badge featured">★ Featured</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-meta">
+              <span class="pill dev">✔</span>
+              <span class="year">2026</span>
+            </div>
+          </div>
+
+          <p class="work-desc">
+            Full bot, 100+ commandes. Perfect for big/little community, automod, ticket, everything you need !.
+          </p>
+
+          <div class="work-tags">
+            <span class="tag">Bots</span>
+            <span class="tag">Nodejs</span>
+          </div>
+
+          <div class="work-actions">
+            <a class="btn primary" href="" target="_blank" rel="noreferrer">Discord</a>
+            <a class="btn ghost" href="https://karmabots.com" target="_blank" rel="noreferrer">Details</a>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-top">
+            <div class="work-title">
+              <img class="work-logo" src="assets/Liyu.png" alt="">
+              <div>
+                <div class="work-name">Liyu</div>
+                <div class="work-badges">
+                  <span class="badge">New</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-meta">
+              <span class="pill dev">✔</span>
+              <span class="year">2025</span>
+            </div>
+          </div>
+
+          <p class="work-desc">
+            An chill discord community server for chill, gamgin, dev. <br> Its project i really love.
+          </p>
+
+          <div class="work-tags">
+            <span class="tag">Discord</span>
+            <span class="tag">Bots</span>
+          </div>
+
+          <div class="work-actions">
+            <a class="btn primary" href="https://discord.gg/2uJYPHhgDJ" target="_blank" rel="noreferrer">Discord</a>
+          </div>
+        </article>
+
+                <article class="work-card">
+          <div class="work-top">
+            <div class="work-title">
+              <img class="work-logo" src="assets/Liyu.png" alt="">
+              <div>
+                <div class="work-name">Liyu Development </div>
+                <div class="work-badges">
+                  <span class="badge">New</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-meta">
+              <span class="pill dev">✔</span>
+              <span class="year">2026</span>
+            </div>
+          </div>
+
+          <p class="work-desc">
+            An chill discord community server for chill, dev. We give some sources, and u can also give sources, u only have to create ticket !
+          </p>
+
+          <div class="work-tags">
+            <span class="tag">Discord</span>
+            <span class="tag">Bots</span>
+          </div>
+
+          <div class="work-actions">
+            <a class="btn primary" href="https://discord.gg/NSQzfy97TB" target="_blank" rel="noreferrer">Discord</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUSIC PLAYER -->
+  <div class="music-player" id="music-player">
+    <audio id="audio-player" preload="auto"></audio>
+
+    <button class="player-btn" id="player-btn" aria-label="Play/Pause">▶</button>
+
+    <div class="player-info">
+      <span class="player-title" id="player-title">Loading…</span>
+      <div class="player-progress" id="player-progress">
+        <div class="player-progress-bar" id="player-progress-bar"></div>
+      </div>
+    </div>
+
+    <button class="player-btn small" id="next-btn" aria-label="Next">⏭</button>
+
+    <input type="range" class="volume-slider" id="volume-slider" min="0" max="100" value="50" aria-label="Volume">
+  </div>
+
+<!-- AJOUTE CES SECTIONS DANS index.html (sans casser ton code)
+Place-les :
+1) la section "Gallery" juste APRES </section> de HOME (avant WORK)
+2) la section "Brand" juste APRES </section> de WORK (avant MUSIC PLAYER)
+-->
+
+<!-- GALLERY / IMAGES -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <h2 class="section-title">Gallery</h2>
+    <p class="muted">My banner i made for me, discord server and friends</p>
+
+    <div class="gallery-grid">
+      <!-- Grande bannière -->
+      <figure class="gallery-item gallery-wide">
+        <img src="assets/asuka.png" alt="Banner 1">
+        <figcaption>Banner / Header</figcaption>
+      </figure>
+
+      <!-- Images / thumbnails -->
+      <figure class="gallery-item gallery-wide">
+        <img src="assets/network.png" alt="Banner 1">
+        <figcaption>Banner / Header</figcaption>
+      </figure>
+
+      <figure class="gallery-item gallery-wide">
+        <img src="assets/reze.png" alt="Banner 1">
+        <figcaption>Banner / Header</figcaption>
+      </figure>
+
+      <figure class="gallery-item gallery-wide">
+        <img src="assets/Zer0two-1920-1080.png" alt="Banner 1">
+        <figcaption>Banner / Header</figcaption>
+      </figure>
+
+      <figure class="gallery-item gallery-wide">
+        <img src="assets/liyubanner.png" alt="Banner 1">
+        <figcaption>Banner / Header</figcaption>
+      </figure>
+
+      <!-- Seconde bannière -->
+      <figure class="gallery-item gallery-wide">
+        <img src="assets/rukia.png" alt="Banner 2">
+        <figcaption>Wide banner</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<!-- LIGHTBOX (global) -->
+<div class="lightbox" id="lightbox">
+  <img id="lightbox-img" alt="">
+</div>
+
+
+  <script src="script.js" defer></script>
+</body>
+</html>
